@@ -58,8 +58,30 @@ public class Level2Methods {
 		
 		return array[0] + array[1] + array[2];
 
-
 	}
 
+	public static boolean tooHot(int temp, boolean isSummer) {
+		
+		if (isSummer == true && temp > 60 && temp <100) {
+			
+			return true;
+		}
+		
+		else if (isSummer == true && temp <= 60 || temp >= 100) {
+			
+			return false;
+		}
+		
+		else if (isSummer == false && temp > 60 && temp <90) {
+			
+			return true;
+		}
+		
+		else {
+			
+			return false;
+		}
+		
+	}
 
 }
